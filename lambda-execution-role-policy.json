@@ -1,0 +1,27 @@
+{
+    "Version": "2012-10-17", 
+    "Statement": [
+      {
+        "Action": [ 
+          "logs:CreateLogStream",
+          "logs:CreateLogGroup",
+          "logs:PutLogEvents"
+        ],
+        "Effect": "Allow", 
+        "Resource": "arn:aws:logs:us-east-1:*replaceWithAccountNumber*:*"
+      },
+      {
+        "Action": [
+          "codepipeline:PutJobSuccessResult",
+          "codepipeline:PutJobFailureResult"
+          ],
+          "Effect": "Allow",
+          "Resource": "*"
+       },
+       {
+          "Effect": "Allow",
+          "Action": "health:DescribeEvents",
+          "Resource": "*"
+      }
+    ]
+  } 
