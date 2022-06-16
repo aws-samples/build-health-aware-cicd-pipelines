@@ -1,5 +1,5 @@
 # AWS Health Aware CI/CD Pipelines
-This is a step by step guide on how to deploy and integrate the AWS Health Aware CI/CD Pipelines blog post sample code on AWS Lambda through the AWS Console and CLI. 
+This is a step by step guide on how to deploy and integrate the AWS Health Aware CI/CD Pipelines [blog post](https://aws.amazon.com/blogs/devops/build-health-aware-ci-cd-pipelines/) sample code on AWS Lambda through the AWS Console and CLI. 
 
 ## Build
 
