@@ -35,7 +35,7 @@ def lambda_handler(event, context):
     job = event["CodePipeline.job"]["id"]
     if(response["events"] == []):
         incidentInProgress = False
-        code_pipeline.put_job_success_result(jobId=job)
+        code_pipeline.put_job_success_result(jobId=job, outputVariables={'message': 'The Region Is Healthy'})
     else:
         incidentInProgress = True
         code_pipeline.put_job_failure_result(jobId=job, failureDetails={'message': 'Incident In Progress', 'type': 'JobFailed'})
